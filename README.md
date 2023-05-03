@@ -1,14 +1,11 @@
-# Focused Concatenation for Context-Aware Neural Machine Translation
+This repository contains the official implementation of the experiments discussed in two papers:
 
-This repository contains the official implementation of the main experiments discussed in the WMT22 paper [Focused Concatenation for Context-Aware Neural Machine Translation](https://arxiv.org/abs/2210.13388). The implementation is based on the [fairseq package v0.9.0](https://github.com/pytorch/fairseq/tree/v0.9.0).
-
-The most relevant files describing the approaches presented in the paper are:
-
-1. [concat_transformer.py](fairseq/models/concat_transformer.py), where the architecture of the concatenation NMT model is implemented;
-2. [doc2doc_translation.py](fairseq/tasks/doc2doc_translation.py), where the task of NMT with windows of concatenated sentences is implemented, as well as the metod for discounting the loss computed on context;
-3. [sent2doc_dataset.py](fairseq/data/sent2doc_dataset.py), containing the class that organizes the data in batches of sequences formed by concatenated sentences.
+- [Focused Concatenation for Context-Aware Neural Machine Translation](https://arxiv.org/abs/2210.13388), presented at WMT2022.
+- [Encoding Sentence Position in Context-Aware Neural Machine Translation with Concatenation](https://arxiv.org/abs/2302.06459), presented at Insights2023.
 
 # Requirements and Installation
+
+The implementation is based on the [fairseq package v0.9.0](https://github.com/pytorch/fairseq/tree/v0.9.0).
 
 [fairseq](https://github.com/pytorch/fairseq) requires the following:
 
@@ -22,7 +19,15 @@ cd focused-concat
 pip install --editable ./
 ```
 
-# Replicate results
+# Relevant files
+
+The most relevant files describing the approaches presented in the paper are:
+
+1. [concat_transformer.py](fairseq/models/concat_transformer.py), where the architecture of the concatenation NMT model is implemented;
+2. [doc2doc_translation.py](fairseq/tasks/doc2doc_translation.py), where the task of NMT with windows of concatenated sentences is implemented, as well as the metod for discounting the loss computed on context;
+3. [sent2doc_dataset.py](fairseq/data/sent2doc_dataset.py), containing the class that organizes the data in batches of sequences formed by concatenated sentences.
+
+## Replicate results
 
 The steps to reproduce our s4to4 results on IWSLT En-De are enumerated below:
 
