@@ -1,6 +1,6 @@
 This repository contains the official implementation of the experiments discussed in two papers:
 
-- [Focused Concatenation for Context-Aware Neural Machine Translation](https://arxiv.org/abs/2210.13388), presented at WMT2022.
+- [Focused Concatenation for Context-Aware Neural Machine Translation](https://aclanthology.org/2022.wmt-1.77/), presented at WMT2022.
 - [Encoding Sentence Position in Context-Aware Neural Machine Translation with Concatenation](https://arxiv.org/abs/2302.06459), presented at Insights2023.
 
 # Requirements and Installation
@@ -52,15 +52,32 @@ For the English-Russian language pair, you can find analogous scripts in this re
 
 # Citation
 
-The [Focused Concatenation](https://arxiv.org/abs/2210.13388) paper:
+The [Focused Concatenation](https://aclanthology.org/2022.wmt-1.77/) paper:
 ```bibtex
-@article{lupo2022focused,
-  doi = {10.48550/ARXIV.2210.13388},
-  url = {https://arxiv.org/abs/2210.13388},
-  author = {Lupo, Lorenzo and Dinarelli, Marco and Besacier, Laurent},
-  title = {Focused Concatenation for Context-Aware Neural Machine Translation},
-  publisher = {arXiv},
-  year = {2022},
+@inproceedings{lupo-etal-2022-focused,
+    title = "Focused Concatenation for Context-Aware Neural Machine Translation",
+    author = "Lupo, Lorenzo  and
+      Dinarelli, Marco  and
+      Besacier, Laurent",
+    booktitle = "Proceedings of the Seventh Conference on Machine Translation (WMT)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.wmt-1.77",
+    pages = "830--842",
+}
+```
+
+The [Encoding sentence position](https://arxiv.org/abs/2302.06459) paper:
+```bibtex
+@article{lupo2023encoding,
+      title={Encoding Sentence Position in Context-Aware Neural Machine Translation with Concatenation}, 
+      author={Lorenzo Lupo and Marco Dinarelli and Laurent Besacier},
+      year={2023},
+      eprint={2302.06459},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 
